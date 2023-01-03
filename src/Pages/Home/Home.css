@@ -1,0 +1,19 @@
+.UpperBody,
+.LowerBody {
+    padding: var(--page-padding);
+}
+
+.CounterContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.DisplayNone {
+    display: none;
+}
+
+#Home #HomeHighlight {
+    background: #F17120;
+    border-radius: 33px;
+    color: #FFFFFF;
+}

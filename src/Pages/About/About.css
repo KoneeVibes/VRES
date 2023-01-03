@@ -1,0 +1,144 @@
+#About #AboutHighlight {
+    background: #F17120;
+    border-radius: 33px;
+    color: #FFFFFF;
+}
+
+.HeroSection .LeadText{
+    font-family: 'Space Grotesk';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+}
+
+.HeroSection .BodyText{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #848484;
+}
+
+.TextCardsSection{
+    padding: var(--sectioning-gap);
+}
+
+.TextCardsSection h4{
+    font-family: Space Grotesk;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+/* .TextCardsSection span{
+    color: #BBBBBB;
+} */
+
+.Cards{
+    display: flex;
+    gap: 3em;
+    padding: var(--sectioning-gap);
+}
+
+.Cards div{
+    padding: 4em;
+}
+
+.ProfileSection{
+    display: flex;
+    gap: 2em;
+    padding: var(--sectioning-gap);
+}
+
+.BodyCopy{
+    margin-block-end: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .HeroSection {
+        padding: var(--sectioning-gap);
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ProfileSection{
+        flex-direction: column;
+        gap: var(--sectioning-gap);
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .HeroSection {
+            padding-right: 15%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Cards{
+        flex-direction: column;
+    }
+
+    .Cards div{
+        padding: 2em;
+    }
+
+    .TextCardsSection h4{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .TextCardsSection h4{
+        font-size: 25px;
+        line-height: 33px;
+        letter-spacing: -0.02em;
+    }
+}
+
+@media screen and (max-width: 150px) {
+    .TextCardsSection h4{
+        font-size: 5px;
+        line-height: 10px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .HeroSection .LeadText {
+        font-size: 25px;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+    }
+
+    .HeroSection .BodyText {
+        font-size: 12px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Cards div {
+        padding: 1em 0.5em;
+    }
+}
+
+@media screen and (max-width: 150px) {
+    .HeroSection .LeadText {
+        font-size: 5px;
+        line-height: 10px;
+        padding: 2px;
+    }
+
+    .HeroSection .BodyText {
+        font-size: 5px;
+        line-height: 10px;
+        padding: 2px;
+    }
+
+    .Cards div {
+        padding: 0.5em 0em;
+    }
+}

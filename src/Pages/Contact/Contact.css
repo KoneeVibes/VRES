@@ -1,0 +1,36 @@
+#Contact #ContactHighlight {
+    background: #F17120;
+    border-radius: 33px;
+    color: #FFFFFF;
+}
+
+#Contact .Main {
+    padding: var(--sectioning-gap);
+    margin: var(--page-padding);
+}
+
+#Contact .Main .BottomSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--sectioning-gap);
+    gap: 6em;
+}
+
+#Contact .Main .BottomSection .MapBox,
+#Contact .Main .CommentBox {
+    flex: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    #Contact .Main .BottomSection {
+        gap: 3em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #Contact .Main .BottomSection {
+        flex-direction: column;   
+        align-items: stretch;     
+    }
+}

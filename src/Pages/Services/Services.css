@@ -1,0 +1,281 @@
+#Services #ServicesHighlight,
+#Procurement #ServicesHighlight,
+#Fabrication #ServicesHighlight,
+#AssetManagement #ServicesHighlight,
+#ElectricalAndMechanical #ServicesHighlight,
+#ProcessAndInstrumentation #ServicesHighlight,
+#EngineeringProcurementAndConstruction #ServicesHighlight,
+#DrillingSupportAndService #ServicesHighlight,
+#Integrating #ServicesHighlight,
+#PowerSolution #ServicesHighlight {
+    background: #F17120;
+    border-radius: 33px;
+    color: #FFFFFF;
+}
+
+#Services .TextSection {
+    padding: var(--sectioning-gap);
+    width: 75%;
+}
+
+.TextSection h4 {
+    font-family: 'Space Grotesk';
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+}
+
+.TextSection p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #B4B4B4;
+    margin: 0;
+    padding-bottom: 3em;
+}
+
+.TextSection .form {
+    width: 55%;
+}
+
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    gap: 4em;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: var(--sectioning-gap);
+}
+
+.ServiceCardSection h1 {
+    font-family: 'Space Grotesk';
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #000000;
+    word-break: break-word;
+}
+
+.ServiceCardSection p {
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #000000;
+}
+
+.ServiceCardSection div {
+    flex: 1;
+}
+
+.ServiceCardSection .InfoTab {
+    padding: 0 32px;
+}
+
+.ServiceCardSection .InfoTab p {
+    cursor: auto;
+}
+
+/* custom styling of sub service pages */
+
+.ProcurementServiceBox #Left {
+    flex: 25%;
+}
+
+.ProcurementServiceBox #Right {
+    flex: 75%;
+}
+
+.ProcurementServiceBox #HeaderText {
+    font-family: 'Space Grotesk';
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.FabricationServiceBox #HeaderText {
+    font-size: 0;
+}
+
+.ProcessAndInstrumentationServiceBox #seven,
+.ProcessAndInstrumentationServiceBox #eight,
+.ProcessAndInstrumentationServiceBox #nine,
+.ProcessAndInstrumentationServiceBox #ten,
+.ProcessAndInstrumentationServiceBox #eleven,
+.EngineeringPCServiceBox #eight,
+.EngineeringPCServiceBox #nine,
+.EngineeringPCServiceBox #ten,
+.EngineeringPCServiceBox #eleven,
+.DrillingSupportAndServiceServiceBox #seven,
+.DrillingSupportAndServiceServiceBox #eight,
+.DrillingSupportAndServiceServiceBox #nine,
+.DrillingSupportAndServiceServiceBox #ten,
+.DrillingSupportAndServiceServiceBox #eleven,
+.IntegratingServiceBox #four,
+.IntegratingServiceBox #five,
+.IntegratingServiceBox #six,
+.IntegratingServiceBox #seven,
+.IntegratingServiceBox #eight,
+.IntegratingServiceBox #nine,
+.IntegratingServiceBox #ten,
+.IntegratingServiceBox #eleven,
+.EM-ServiceBox #six,
+.EM-ServiceBox #seven,
+.EM-ServiceBox #eight,
+.EM-ServiceBox #nine,
+.EM-ServiceBox #ten,
+.EM-ServiceBox #eleven {
+    display: none;
+}
+
+.ProcessAndInstrumentationServiceBox .ListBoards,
+.EngineeringPCServiceBox .ListBoards,
+.DrillingSupportAndServiceServiceBox .ListBoards,
+.IntegratingServiceBox .ListBoards,
+.EM-ServiceBox .ListBoards {
+    padding-bottom: 3em;
+}
+
+.ProcessAndInstrumentationServiceBox ul,
+.EngineeringPCServiceBox ul,
+.DrillingSupportAndServiceServiceBox ul,
+.IntegratingServiceBox ul,
+.EM-ServiceBox ul {
+    padding-inline-start: 0;
+    list-style-position: inside;
+}
+
+@media screen and (max-width: 1440px) {
+    .ProcurementServiceBox #HeaderText {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .ProcurementServiceBox #HeaderText {
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .TextSection h4 {
+        line-height: 25px;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+
+    .TextSection p {
+        font-size: 14px;
+        letter-spacing: 0em;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    .row1,
+    .row2,
+    .row3 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media screen and (min-width: 560px) and (max-width: 830px) {
+    .TextSection .form {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .TextSection .form {
+        width: 97.5%;
+    }
+
+    #Services .TextSection {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 516px) {
+    .ProcurementServiceBox #eleven {
+        margin-bottom: 0;
+    }
+
+    .ProcurementServiceBox #one {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .ServiceCardSection .InfoTab {
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .ServiceCardSection .InfoTab {
+        padding: 16px 8px;
+    }
+}
+
+@media screen and (max-width: 220px) {
+    .ProcurementServiceBox #HeaderText {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .ServiceCardSection h1 {
+        font-size: 14px;
+    }
+
+    .ServiceCardSection p {
+        font-size: 2px;
+    }
+}
+
+@media screen and (max-width: 150px) {
+    .TextSection h4 {
+        font-size: 14px;
+    }
+
+    .TextSection p,
+    .ProcurementServiceBox #HeaderText {
+        font-size: 7px;
+        line-height: 21px;
+    }
+
+    .ServiceCardSection h1 {
+        font-size: 5px;
+    }
+
+    .ServiceCardSection .InfoTab {
+        padding: 8px 0px;
+    }
+}
+
+@media screen and (max-width: 100px) {
+    .TextSection h4 {
+        font-size: 5px;
+        line-height: 10px;
+    }
+
+    .TextSection p {
+        font-size: 2px;
+        line-height: 10px;
+    }
+
+    .ServiceCardSection h1 {
+        font-size: 3px;
+    }
+}

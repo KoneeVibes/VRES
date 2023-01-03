@@ -13,7 +13,7 @@ const Integrating = () => {
         height={'27.25em'}
         display={'none'}
         HeadOne={'Integrating '}
-        Body={'Valley Ridge offers a wide range of asset management '} />
+        Body={'We are an integrated oil and gas company that operates throughout the entire oil value chain. '} />
       <div className='IntegratingServiceBox'>
         <ServiceBox Header={'We operate over the whole oil value chain'}
           Body={'Valley Ridge is an integrated oil & gas company this means that they operate over the whole oil value chain system from oil exploration and production to shipment via tankers or pipelines and finally refining, and marketing of petroleum products. Overall operations of integrated companies are categorized into three main classes that are:'}

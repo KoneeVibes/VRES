@@ -15,7 +15,7 @@ const Fabrication = () => {
         height={'27.25em'}
         display={'none'}
         HeadOne={'Fabrication, Civil, Work & Construction Service'}
-        Body={'Valley Ridge offers a wide range of asset management'} />
+        Body={'We have the capabilities to deliver quality civil and construction services, as well as extensive fabrication services.'} />
       <div className='FabricationServiceBox'>
         <ServiceBox src={ServiceBoxPhoto}
           ImageDescription={'Fabrication Service'}

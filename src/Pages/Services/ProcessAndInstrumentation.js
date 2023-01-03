@@ -14,7 +14,7 @@ const ProcessAndInstrumentation = () => {
         height={'27.25em'}
         display={'none'}
         HeadOne={'Process & Instrumentation'}
-        Body={'Valley Ridge offers a wide range of asset management '} />
+        Body={'We are dedicated to building close working relationships with our clients to ensure a complete understanding of their requirements.'} />
       <div className='ProcessAndInstrumentationServiceBox'>
         <ServiceBox Header={'Use of latest Technology'}
           Body={'Valley Ridge is deeply committed in close working relationship, to ensure a complete understanding of client’s requirements, ensuring that the engineered solution uses the latest technology available. The scope of work covers all the activities starting from the feasibility, study, engineering, supply of automation equipment, installation, testing & commissioning up to system hand over.'}

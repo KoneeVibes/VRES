@@ -13,7 +13,7 @@ const AssetManagement = () => {
       <Header background={(window.screen.availWidth > 425) ? HeaderPhoto : MobilePhoto}
         height={'27.25em'}
         HeadOne={'Asset Management'}
-        Body={'Valley Ridge offers a wide range of asset management '}
+        Body={'Our focus is on field development, brownfield revamp/modification of fixed platforms, associated pipelines and deep-water floating systems. '}
         display={'none'} />
       <ServiceBox ListBoardDisp={'none'}
         Header={'Collaborating with global leaders'}

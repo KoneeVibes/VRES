@@ -16,7 +16,7 @@ const Procurement = () => {
         height={'27.25em'}
         HeadOne={'Procurement Service'}
         display={'none'}
-        Body={'Valley Ridge offers a wide range of procurement solutions in different catergories, What do we source?'} />
+        Body={'We understand the importance of sourcing high-quality products and services to meet the needs of your business.'} />
       <div className='ProcurementServiceBox'>
         <ServiceBox Header={'Procurement Service'}
           Note={'Valley Ridge offers a wide range of procurement solutions in different catergories, What do we source?'}

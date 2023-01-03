@@ -13,7 +13,7 @@ const DrillingSupportAndService = () => {
         height={'27.25em'}
         display={'none'}
         HeadOne={'Drilling Support Service'}
-        Body={'Valley Ridge offers a wide range of asset management'} />
+        Body={'Valley Ridge has developed robust solutions tailored to provide drilling, well control and completion services.'} />
       <div className='DrillingSupportAndServiceServiceBox'>
         <ServiceBox Header={'Optimize your drilling expenditure'}
           Body={'Valley Ridge has developed robust solutions tailored to provide drilling, well control and completion services. Our teams have a broad range of experience to guarantee the best solution to optimize your drilling capital expenditure.'}

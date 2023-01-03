@@ -13,7 +13,7 @@ const ElectricalAndMechanical = () => {
         height={'27.25em'}
         display={'none'}
         HeadOne={'Electrical & Mechanical Service'}
-        Body={'Valley Ridge offers a wide range of asset management '} />
+        Body={'We are a leading provider of electrical and mechanical engineering solutions.'} />
       <div className='EM-ServiceBox'>
         <ServiceBox Header={'Collaborating with global leaders'}
           Body={'Valley Ridge offers a wide range of Electrical & Mechanical Engineering solutions in different catergories, Valley Ridge provides premier electrical & mechanical contracting and maintenance for private and public sector in commercial industrial markets throughout the continent. Our electrical services include project management, design, supply, installation, testing plus commissioning and maintenance of electrical systems. Our Electrical Division places a great emphasis on its relationship with clients, private or commercial, and pride ourselves on the ability to respond to your contracting requirements in an efficient and cost effective way.'}

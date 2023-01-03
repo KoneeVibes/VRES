@@ -170,7 +170,7 @@ const Footer = () => {
             </div>
             <div className='LowerSection'>
                 <div className='TextFlank'>
-                    <span>© TToil 2021 . All right reserved<div></div>Designed with by Lemon Designs</span>
+                    <span>© VRES 2023 . All right reserved<div></div>Designed by Lemon Designs</span>
                 </div>
                 <div className='IconsFlank'>
                     <Link to={''}><img src={YoutubeIcon} alt='Youtube Icon'></img></Link>

@@ -15,7 +15,7 @@ const EngineeringProcurementAndConstruction = () => {
         height={'27.25em'}
         display={'none'}
         HeadOne={'Engineering Procurment & Construction'}
-        Body={'Valley Ridge offers a wide range of asset management'} />
+        Body={'We are leading independent contractor for engineering, procurement, and construction (EPC) and project management services.'} />
       <div className='EngineeringPCServiceBox'>
         <ServiceBox Header={'We are formost independent Contactors'}
           Body={'Valley Ridge is one of the foremost independent contractors for Engineering, Procurement & Construction (EPC) and Project Management; as well as Construction liaison representatives for clients committed or inclined towards to construct projects of significant worth in various industries such as Power sector, Oil and Gas Industries, Aviation etc.'}

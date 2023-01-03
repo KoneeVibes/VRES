@@ -45,7 +45,7 @@ const Services = () => {
           <div className='row1'>
             <BlogCard thumbnail={Procurement}
               header={'Procurement Service'}
-              body={'we understand the importance of sourcing high-quality products and services to meet the needs of your business.'}
+              body={'We understand the importance of sourcing high-quality products and services to meet the needs of your business.'}
               background={'#F5F5F5'}
               borderRadius={'18px'}
               // height={'29.8125em'}
@@ -59,7 +59,7 @@ const Services = () => {
 
             <BlogCard thumbnail={AssetManagaement}
               header={'Asset Management'}
-              body={'Valley Ridge offers a wide range of procurement solutions in different catergories, What do we source?'}
+              body={'Our focus is on field development, brownfield revamp/modification of fixed platforms, associated pipelines and deep-water floating systems.'}
               background={'#F5F5F5'}
               borderRadius={'18px'}
               // height={'29.8125em'}

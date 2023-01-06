@@ -2,11 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from './Assets/Logo.svg'
 import FooterCard from './FooterCard';
-import FacebookIcon from './Assets/FacebookIcon.svg'
-import InstagramIcon from './Assets/InstagramIcon.svg'
-import LinkedInIcon from './Assets/LinkedInIcon.svg'
-import YoutubeIcon from './Assets/YoutubeIcon.svg'
-import { Link } from 'react-router-dom';
+import TwitterIcon from './Assets/TwitterIcon.svg';
+import MediumIcon from './Assets/MediumIcon.svg';
+import LinkedInIcon from './Assets/LinkedInIcon.svg';
 
 const FooterWrapper = styled.footer`
     background: #000000;
@@ -160,23 +158,22 @@ const Footer = () => {
                         body8={'Integrating'} link8={'/services/integrating'}
                         body9={'Power Solution'} link9={'/services/powersolution'} />
                     <FooterCard header={'LOCATION'}
-                        body1={'1-7 Muri Okonla Street, Victoria Island, Lagos '} link1={''} cursor1={'auto'}/>
+                        body1={'1-7 Muri Okonla Street, Victoria Island, Lagos '} link1={''} cursor1={'auto'} />
                     <FooterCard header={'CONTACT'}
                         body1={'+2348098082746'} link1={'tel:+2348098082746'}
                         body2={'+23408033855764'} link2={'tel:+23408033855764'}
                         body3={'+447776306738'} link3={'tel: +447776306738'}
-                        body4={'info@valleyridgeenergy.com'} link4={'mailto:info@valleyridgeenergy.com'}/>
+                        body4={'info@valleyridgeenergy.com'} link4={'mailto:info@valleyridgeenergy.com'} />
                 </div>
             </div>
             <div className='LowerSection'>
                 <div className='TextFlank'>
-                    <span>© VRES 2023 . All right reserved<div></div>Designed by Lemon Designs</span>
+                    <span>© VRES 2023 . All rights reserved<div></div>Designed by Lemon Designs</span>
                 </div>
                 <div className='IconsFlank'>
-                    <Link to={''}><img src={YoutubeIcon} alt='Youtube Icon'></img></Link>
-                    <Link to={''}><img src={LinkedInIcon} alt='LinkedIn Icon'></img></Link>
-                    <Link to={''}><img src={FacebookIcon} alt='Facebook Icon'></img></Link>
-                    <Link to={''}><img src={InstagramIcon} alt='Instagram Icon'></img></Link>
+                    <a href='https://medium.com/@valleyridge' target='_blank' rel="noopener noreferrer external"><img src={MediumIcon} alt='Medium Icon'></img></a>
+                    <a href='https://www.linkedin.com/in/valley-ridge-energy-services-3b8a1a260/' target='_blank' rel="noopener noreferrer external"><img src={LinkedInIcon} alt='LinkedIn Icon'></img></a>
+                    <a href='https://twitter.com/valleyridge_' target='_blank' rel="noopener noreferrer external"><img src={TwitterIcon} alt='Twitter Icon'></img></a>
                 </div>
             </div>
         </FooterWrapper>

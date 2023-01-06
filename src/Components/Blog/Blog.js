@@ -107,23 +107,23 @@ const Blog = () => {
             </div>
             <div className='ThumbnailSection'>
                 <BlogCard thumbnail={Thumbnail1}
-                    body={'Announcing the PyTorch Foundation to Accelerate Progress in AI Research'}
-                    date={'September 12, 2022'}
+                    body={'Investing In Africa Oil & Gas? Top 5 Forums You Should Attend'}
+                    date={'January 6, 2023'}
                     padding={(window.screen.availWidth > 768) ? 'var(--sectioning-gap)' : '0'}
                     displayButton={'none'}
-                    link={'/newsroom/thepowerofbusinessstrategicpartnership'} />
+                    link={'/newsroom/articleone'} />
                 <BlogCard thumbnail={Thumbnail2}
-                    body={'Testing More Ways to Control What You See on Instagram'}
-                    date={'August 30, 2022'}
+                    body={'Tullow Oil and Capricorn Energy to give birth to a Tullicorn, a Caprillow… or maybe a Unicorn?'}
+                    date={'January 6, 2023'}
                     padding={(window.screen.availWidth > 768) ? 'var(--sectioning-gap)' : '0'}
                     displayButton={'none'}
-                    link={'/newsroom/thepowerofbusinessstrategicpartnership'} />
+                    link={'/newsroom/articletwo'} />
                 <BlogCard thumbnail={Thumbnail3}
-                    body={'Introducing the First End-to-End Shopping Experience on WhatsApp With JioMart in India'}
-                    date={'August 29, 2022'}
+                    body={'Will Africa become the new green hydrogen “El Dorado”?'}
+                    date={'January 6, 2023'}
                     padding={(window.screen.availWidth > 768) ? 'var(--sectioning-gap)' : '0'}
                     displayButton={'none'}
-                    link={'/newsroom/thepowerofbusinessstrategicpartnership'} />
+                    link={'/newsroom/articlethree'} />
             </div>
         </BlogWrapper>
     )

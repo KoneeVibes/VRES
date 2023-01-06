@@ -23,8 +23,8 @@ const Newsroom = () => {
         <div className='ArticlesSection'>
           <h2>All articles</h2>
           <BlogCard thumbnail={ThumbnailOne}
-            header={'The power of business strategic partnership'}
-            body={'Valley Ridge offers a wide range of procurement solutions in different catergories, What do we source?'}
+            header={'Investing In Africa Oil & Gas? Top 5 Forums You Should Attend'}
+            body={'Oil and Gas (petroleum) is almost as vital to human existence as water, because petroleum is used in every day-to-day activity, Petroleum remains in high demand.'}
             text={'Learn More '}
             border={'none'}
             bgColor={'#FFFFFF'}
@@ -33,11 +33,11 @@ const Newsroom = () => {
             padding={`var(--sectioning-gap)`}
             align={(window.screen.availWidth > 769) ? 'center' : 'stretch'}
             flexDirection={(window.screen.availWidth < 769) ? 'column' : ''}
-            link={'/newsroom/thepowerofbusinessstrategicpartnership'} />
+            link={'/newsroom/articleone'} />
 
           <BlogCard thumbnail={ThumbnailTwo}
-            header={'The power of business strategic partnership'}
-            body={'Valley Ridge offers a wide range of procurement solutions in different catergories, What do we source?'}
+            header={'Tullow Oil and Capricorn Energy to give birth to a Tullicorn, a Caprillow… or maybe a Unicorn?'}
+            body={'As of mid-year 2022, Tullow Oil and Capricorn Energy were about forming a new Africa-focused energy company.'}
             text={'Learn More '}
             border={'none'}
             bgColor={'#FFFFFF'}
@@ -46,11 +46,11 @@ const Newsroom = () => {
             padding={`var(--sectioning-gap)`}
             align={(window.screen.availWidth > 769) ? 'center' : 'stretch'}
             flexDirection={(window.screen.availWidth < 769) ? 'column' : ''}
-            link={'/newsroom/thepowerofbusinessstrategicpartnership'} />
+            link={'/newsroom/articletwo'} />
 
           <BlogCard thumbnail={ThumbnailThree}
-            header={'The power of business strategic partnership'}
-            body={'Valley Ridge offers a wide range of procurement solutions in different catergories, What do we source?'}
+            header={'Will Africa become the new green hydrogen “El Dorado”?'}
+            body={'Can Africa become a place where advanced science can be applied and contribute to improving the environment, i.e., an "El Dorado" in the new green economy?'}
             text={'Learn More '}
             border={'none'}
             bgColor={'#FFFFFF'}
@@ -59,7 +59,7 @@ const Newsroom = () => {
             padding={`var(--sectioning-gap)`}
             align={(window.screen.availWidth > 769) ? 'center' : 'stretch'}
             flexDirection={(window.screen.availWidth < 769) ? 'column' : ''}
-            link={'/newsroom/thepowerofbusinessstrategicpartnership'} />
+            link={'/newsroom/articlethree'} />
         </div>
         <SubscriptionBox />
       </div>

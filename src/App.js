@@ -40,9 +40,9 @@ function App() {
             <Route path='/services/drillingsupportandservice' element={<DrillingSupportAndService />}></Route>
             <Route path='/services/integrating' element={<Integrating />}></Route>
             <Route path='/services/powersolution' element={<PowerSolution />}></Route>
-            <Route path='/newsroom/thepowerofbusinessstrategicpartnership' element={<ArticleOne />}></Route>
-            <Route path='/newsroom/thepowerofbusinessstrategicpartnership' element={<ArticleTwo />}></Route>
-            <Route path='/newsroom/thepowerofbusinessstrategicpartnership' element={<ArticleThree />}></Route>
+            <Route path='/newsroom/articleone' element={<ArticleOne />}></Route>
+            <Route path='/newsroom/articletwo' element={<ArticleTwo />}></Route>
+            <Route path='/newsroom/articlethree' element={<ArticleThree />}></Route>
           </Routes>
         </ScrollToTop>
       </BrowserRouter>

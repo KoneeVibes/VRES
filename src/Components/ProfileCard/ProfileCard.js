@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ProfileCardWrapper = styled.div`
-    padding: 2em;
+    padding: 4em;
     border-radius: 18px;
     flex: 1;
     border: 1px solid #ABABAB;
@@ -35,11 +35,9 @@ const ProfileCardWrapper = styled.div`
         line-height: 32px;
     }
 
-    @media screen and (min-width: 1024px){
-        padding: 2em 1em;
-    }
-
     @media screen and (max-width: 768px){
+        padding: 2em;
+        
         p{
             font-size: 16px;
             line-height: 28px;

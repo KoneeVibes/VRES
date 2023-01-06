@@ -138,7 +138,7 @@ const CommentBox = () => {
 
     return (
         <CommentBoxWrapper className='CommentBox'>
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} name='VRES'>
                 <h6>Get In Touch</h6>
                 <p>For any inquiries, questions or commendations, please fill out the following form</p>
                 <input type='text' placeholder='Your Name' name='user_name' required></input>

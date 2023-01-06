@@ -49,7 +49,7 @@
 
 .ProfileSection{
     display: flex;
-    gap: 2em;
+    gap: 4em;
     padding: var(--sectioning-gap);
 }
 

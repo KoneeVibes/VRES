@@ -19,6 +19,7 @@ const NavbarWrapper = styled.nav`
         align-items: center;
         list-style-type: none;
         cursor: pointer;
+        padding: 0;
     }
 
     ul, h6{
@@ -212,7 +213,7 @@ const Navbar = () => {
             }
         }
 
-        const HideHighlight = function(){
+        const HideHighlight = function () {
             highlight.style.transform = 'translate(0%, -102%)';
         };
 

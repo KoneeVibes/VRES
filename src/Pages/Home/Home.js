@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css'
+import './Home.css';
 import Navbar from '../../Components/Navbar/Navbar.js';
 import Header from '../../Components/Header/Header';
 import PCHeaderPhoto from './Assets/HeaderPhoto.svg';

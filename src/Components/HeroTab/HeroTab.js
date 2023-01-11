@@ -69,13 +69,11 @@ const HeroTabWrapper = styled.section`
         h4{
             font-size: 5px;
             line-height: 10px;
-            // padding: 2px;
         }
 
         p{
             font-size: 5px;
             line-height: 10px;
-            // padding: 2px;
         }
     }
 `

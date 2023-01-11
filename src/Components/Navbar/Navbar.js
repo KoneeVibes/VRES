@@ -75,10 +75,7 @@ const NavbarWrapper = styled.nav`
 
     @media screen and (max-width: 1440px){
         --NavLinkPadding: 7px 14px;
-        ul{
-            // necessary only if the careers link is up
-            // gap: 0.2em;
-        }
+
     }
 
     @media screen and (max-width: 1260px){
@@ -88,11 +85,6 @@ const NavbarWrapper = styled.nav`
     @media screen and (max-width: 1200px){
         ul, h6{
             font-size: 14px;
-        }
-
-        ul{
-            // necessary only if the careers link is up
-            // gap: 0;
         }
 
         .logo{
@@ -231,7 +223,6 @@ const Navbar = () => {
                 <Link to='/'><li className='NavHighlight' id='HomeHighlight'>Home</li></Link>
                 <Link to='/about'><li className='NavHighlight' id='AboutHighlight'>About Us</li></Link>
                 <Link to='/services'><li className='NavHighlight' id='ServicesHighlight'>Our Services</li></Link>
-                {/* <li className='NavHighlight'>Careers</li> */}
                 <Link to='/newsroom'><li className='NavHighlight' id='NewsroomHighlight'>NewsRoom</li></Link>
                 <Link to='/contact'><li className='NavHighlight' id='ContactHighlight'>Contact Us</li></Link>
                 <li className='LanguageSelector'>

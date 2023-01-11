@@ -33,10 +33,6 @@
     letter-spacing: -0.02em;
 }
 
-/* .TextCardsSection span{
-    color: #BBBBBB;
-} */
-
 .Cards{
     display: flex;
     gap: 3em;

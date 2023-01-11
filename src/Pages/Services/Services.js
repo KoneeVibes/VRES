@@ -48,7 +48,6 @@ const Services = () => {
               body={'We understand the importance of sourcing high-quality products and services to meet the needs of your business.'}
               background={'#F5F5F5'}
               borderRadius={'18px'}
-              // height={'29.8125em'}
               text={'Learn More '}
               border={'none'}
               bgColor={'#F5F5F5'}
@@ -62,7 +61,6 @@ const Services = () => {
               body={'Our focus is on field development, brownfield revamp/modification of fixed platforms, associated pipelines and deep-water floating systems.'}
               background={'#F5F5F5'}
               borderRadius={'18px'}
-              // height={'29.8125em'}
               text={'Learn More '}
               border={'none'}
               bgColor={'#F5F5F5'}
@@ -76,7 +74,6 @@ const Services = () => {
               body={'We have the capabilities to deliver quality civil and construction services, as well as extensive fabrication services.'}
               background={'#F5F5F5'}
               borderRadius={'18px'}
-              // height={'29.8125em'}
               text={'Learn More '}
               border={'none'}
               bgColor={'#F5F5F5'}
@@ -91,7 +88,6 @@ const Services = () => {
               body={'We are a leading provider of electrical and mechanical engineering solutions.'}
               background={'#F5F5F5'}
               borderRadius={'18px'}
-              // height={'29.8125em'}
               text={'Learn More '}
               border={'none'}
               bgColor={'#F5F5F5'}
@@ -105,7 +101,6 @@ const Services = () => {
               body={'We are dedicated to building close working relationships with our clients to ensure a complete understanding of their requirements.'}
               background={'#F5F5F5'}
               borderRadius={'18px'}
-              // height={'29.8125em'}
               text={'Learn More '}
               border={'none'}
               bgColor={'#F5F5F5'}
@@ -119,7 +114,6 @@ const Services = () => {
               body={'We are leading independent contractor for engineering, procurement, and construction (EPC) and project management services.'}
               background={'#F5F5F5'}
               borderRadius={'18px'}
-              // height={'29.8125em'}
               text={'Learn More '}
               border={'none'}
               bgColor={'#F5F5F5'}
@@ -134,7 +128,6 @@ const Services = () => {
               body={'Valley Ridge has developed robust solutions tailored to provide drilling, well control and completion services.'}
               background={'#F5F5F5'}
               borderRadius={'18px'}
-              // height={'29.8125em'}
               text={'Learn More '}
               border={'none'}
               bgColor={'#F5F5F5'}
@@ -148,7 +141,6 @@ const Services = () => {
               body={'We are an integrated oil and gas company that operates throughout the entire oil value chain.'}
               background={'#F5F5F5'}
               borderRadius={'18px'}
-              // height={'29.8125em'}
               text={'Learn More '}
               border={'none'}
               bgColor={'#F5F5F5'}
@@ -162,7 +154,6 @@ const Services = () => {
               body={'We continue to make significant progress in improvements in the areas of engineering and executions of electrification projects across Nigeria.'}
               background={'#F5F5F5'}
               borderRadius={'18px'}
-              // height={'29.8125em'}
               text={'Learn More '}
               border={'none'}
               bgColor={'#F5F5F5'}

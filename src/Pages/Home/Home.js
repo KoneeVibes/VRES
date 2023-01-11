@@ -4,7 +4,6 @@ import Navbar from '../../Components/Navbar/Navbar.js';
 import Header from '../../Components/Header/Header';
 import PCHeaderPhoto from './Assets/HeaderPhoto.svg';
 import MobilePhoto from './Assets/MobileHeaderPhoto.svg';
-// import Counter from '../../Components/Counter/Counter';
 import HeroTab from '../../Components/HeroTab/HeroTab';
 import HeroPhoto from './Assets/HeroPhoto.svg';
 import Carousel from '../../Components/Carousel/Carousel'
@@ -32,9 +31,6 @@ const Home = () => {
         height={'42.25em'}
         Link1={'/services'}
         Link2={'#calendly'} />
-      {/* <div className='CounterContainer'>
-          <Counter />
-        </div> */}
       <section className='UpperBody'>
         <div className='HeroTabContainer'>
           <HeroTab img={HeroPhoto}

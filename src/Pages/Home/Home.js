@@ -27,7 +27,7 @@ const Home = () => {
         BgColorOne={'rgba(255, 113, 19, 0)'}
         BorderTwo={'none'}
         BorderOne={'1px solid #FFFFFF'}
-        Body={'We take pride in equipping ourselves with tools of the highest quality to execute our  projects.'}
+        Body={'We take pride in utilizing the highest quality tools in executing our projects.'}
         height={'42.25em'}
         Link1={'/services'}
         Link2={'#calendly'} />
@@ -36,7 +36,7 @@ const Home = () => {
           <HeroTab img={HeroPhoto}
             description={'Hero Photo'}
             leadtext={'What we see'}
-            body={"To be the go-to choice for oil and gas companies in Nigeria and across Africa. Dedicated to delivering top-quality services and building long lasting relationships, ensuring we're always at the forefront of the industry."}
+            body={"To be the go-to choice for oil and gas companies in Nigeria and across Africa that is dedicated to delivering top-quality services and building long lasting relationships while ensuring we are always at the forefront of the industry."}
             justifyContent={'space-between'} padding={window.screen.availWidth >= 1024 ? '3.65625em 0 0 0' : ''}/>
         </div>
         <Carousel

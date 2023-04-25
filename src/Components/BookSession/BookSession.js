@@ -71,8 +71,8 @@ const BookSession = () => {
   return (
     <BookSessionWrapper id='calendly'>
         <div className='TextFlank'>
-            <h3>Still not sure? book a demo and see if we’re a fit!</h3>
-              <p>By the end of this audit call, you will have a clear understanding of the next steps you can take for your business to build and scale a human-centric product . </p><p> Find a time on ValleyRidge (our Executive Assistance) calendar to schedule your call today and we look forward to speaking to you soon!</p>
+            <h3>Still not sure? Book a demo and see if we’re a fit!</h3>
+              <p>By the end of this audit call, you will have a clear understanding of the next steps you can take for your business to build and scale a human-centric product . </p><p> Find an available slot on our Valleyridge (our Executive Assistance) calendar to schedule your call today. We look forward to speaking with you soon!</p>
         </div>
         <div className='CalendarFlank'>
             <InlineWidget url={CALENDLY}/>

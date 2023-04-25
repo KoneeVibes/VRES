@@ -158,11 +158,10 @@ const Footer = () => {
                         body8={'Integrating'} link8={'/services/integrating'}
                         body9={'Power Solution'} link9={'/services/powersolution'} />
                     <FooterCard header={'LOCATION'}
-                        body1={'1-7 Muri Okonla Street, Victoria Island, Lagos '} link1={''} cursor1={'auto'} />
+                        body1={'382 Ikorodu Road, Maryland, Lagos '} link1={''} cursor1={'auto'} />
                     <FooterCard header={'CONTACT'}
-                        body1={'+2348098082746'} link1={'tel:+2348098082746'}
-                        body2={'+23408033855764'} link2={'tel:+23408033855764'}
-                        body3={'+447776306738'} link3={'tel: +447776306738'}
+                        body1={'+23408033855764'} link2={'tel:+23408033855764'}
+                        body2={'+447776306738'} link3={'tel: +447776306738'}
                         body4={'info@valleyridgeenergy.com'} link4={'mailto:info@valleyridgeenergy.com'} />
                 </div>
             </div>

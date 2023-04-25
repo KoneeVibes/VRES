@@ -116,22 +116,21 @@ const ContactsTab = () => {
                 <img src={Location} alt='Location Icon'></img>
                 <div className='TextSide'>
                     <h6>Location</h6>
-                    <p>1-7 Muri Okonla Street, Victoria Island
-                        Lagos</p>
+                    <p>382 Ikorodu Road, Maryland, Lagos</p>
                 </div>
             </div>
             <div className='Phone'>
                 <img src={Phone} alt='Phone Icon'></img>
                 <div className='TextSide'>
                     <h6>Contact</h6>
-                    <p>+2348098082746, +23408033855764</p>
+                    <p>+23408033855764, +447776306738</p>
                 </div>
             </div>
             <div className='Mail'>
                 <img src={Mail} alt='Mail Icon'></img>
                 <div className='TextSide'>
                     <h6>Email</h6>
-                    <p>Info@Valleyridgeenergy.com</p>
+                    <p>info@valleyridgeenergy.com</p>
                 </div>
             </div>
         </ContactsTabWrapper>

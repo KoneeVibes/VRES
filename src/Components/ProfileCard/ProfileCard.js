@@ -84,14 +84,15 @@ const ProfileCardWrapper = styled.div`
 
 `
 
-const ProfileCard = ({src, description, header, body}) => {
+const ProfileCard = ({src, description, header, bodyI, bodyII}) => {
   return (
     <ProfileCardWrapper>
         <div className='ImageSection'>
             <img src={src} alt={description}></img>
         </div>
         <h2>{header}</h2>
-        <p>{body}</p>
+        <p>{bodyI}</p>
+        <p>{bodyII}</p>
     </ProfileCardWrapper>
   )
 }

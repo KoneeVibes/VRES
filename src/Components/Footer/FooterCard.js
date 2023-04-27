@@ -48,22 +48,22 @@ const FooterCardWrapper = styled.div`
     }
 `
 
-const FooterCard = ({ header, body1, body2, body3, body4, body5, body6, body7, body8, body9, link1, link2, link3, link4, link5, link6, link7, link8, link9, cursor1}) => {
+const FooterCard = ({ header, body1, body2, body3, body4, body5, body6, body7, body8, body9, link1, link2, link3, link4, link5, link6, link7, link8, link9, cursor1, cursor2, cursor3 }) => {
     return (
         <FooterCardWrapper>
             <h6>{header}</h6>
             <HashLink to={link1} onClick={(e) => {
                 window.location.href = link1;
                 e.preventDefault();
-            }} style={{cursor: cursor1}}><p>{body1}</p></HashLink>
+            }} style={{ cursor: cursor1 }}><p>{body1}</p></HashLink>
             <HashLink to={link2} onClick={(e) => {
                 window.location.href = link2;
                 e.preventDefault();
-            }}><p>{body2}</p></HashLink>
+            }} style={{ cursor: cursor2 }}><p>{body2}</p></HashLink>
             <HashLink to={link3} smooth onClick={(e) => {
                 window.location.href = link3;
                 e.preventDefault();
-            }}><p>{body3}</p></HashLink>
+            }} style={{ cursor: cursor3 }}><p>{body3}</p></HashLink>
             <HashLink to={link4} smooth onClick={(e) => {
                 window.location.href = link4;
                 e.preventDefault();

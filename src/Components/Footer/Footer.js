@@ -158,7 +158,9 @@ const Footer = () => {
                         body8={'Integrating'} link8={'/services/integrating'}
                         body9={'Power Solution'} link9={'/services/powersolution'} />
                     <FooterCard header={'LOCATION'}
-                        body1={'382 Ikorodu Road, Maryland, Lagos '} link1={''} cursor1={'auto'} />
+                        body1={'382 Ikorodu Road, Maryland, Lagos '} link1={''} cursor1={'auto'}
+                        body2={'5th Floor Interservice Tower Lumumba Avenue, Nakasero Kampala, Uganda'} link2={''} cursor2={'auto'}
+                        body3={' Abidjan, Cocody - Angré, immeuble Mah djalika'} link3={''} cursor3={'auto'} />
                     <FooterCard header={'CONTACT'}
                         body1={'+23408033855764'} link2={'tel:+23408033855764'}
                         body2={'+447776306738'} link3={'tel: +447776306738'}

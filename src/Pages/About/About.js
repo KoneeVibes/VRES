@@ -39,8 +39,8 @@ const About = () => {
         <div className='ProfileSection' id='Team'>
           <ProfileCard src={ImageI} description={'Picture'} header={'Kunle Gbagba'} bodyI={'Kunle Gbagba is the Co-Founder and Director at Valley Ridge Energy Ltd with more than 13 years of experience as an IT and Software Development expert and a Consultant in healthcare.'}
             bodyII={'He holds a Master’s degree in Geographical Information Systems from the University of Portsmouth UK and a Bachelors degree in Computer Engineering. Gbagba’s expertise spans Implementing SAP Procurement and Strategic Sourcing as well as big data.'} />
-          <ProfileCard src={ImageII} description={'Picture'} header={'Tunde Tella'} bodyI={"Tunde Tella is the Co-Founder and Director at Valley Ridge Energy Ltd with extensive experience in Banking, Healthcare, Telecoms, Consulting and New Technologies."}
-            bodyII={'He is a graduate of Mathematics and Statistics from the University of Lagos, and has MBA from the University of Connecticut School of Business with concentration in Strategy, Marketing and Finance. He has worked in various African Countries including Nigeria, Mozambique, Angola, Gabon, Ivory Coast, Uganda and Ghana. '} />
+          <ProfileCard src={ImageII} description={'Picture'} header={'Tunde Tella'} bodyI={"Tunde Tella is a graduate of Mathematics and Statistics from the University of Lagos. He also holds an MBA from the University of Connecticut School of Business, with a concentration in Strategy, Marketing, and Finance."}
+            bodyII={'With extensive experience in Banking, Healthcare, Telecoms, Consulting, and New Technologies, Tunde has worked in various African countries, including Nigeria, Mozambique, Angola, Gabon, Ivory Coast, Uganda, and Ghana. Currently, he serves as a Director at Valley Ridge Energy Services Limited, where he is in charge of Operations and Business Development.'} />
         </div>
         <FAQ />
       </div>

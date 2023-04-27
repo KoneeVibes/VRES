@@ -7,11 +7,12 @@ import Mail from './Assets/MailIcon.svg';
 const ContactsTabWrapper = styled.section`
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 2em;
 
     .Location, .Phone, .Mail{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 1em;
     }
 
@@ -34,10 +35,6 @@ const ContactsTabWrapper = styled.section`
 
     @media screen and (max-width: 1480px){
         gap: 6em;
-
-        p{
-            margin: 0;
-        }
     }
 
     @media screen and (max-width: 1280px){
@@ -53,6 +50,9 @@ const ContactsTabWrapper = styled.section`
     }
 
     @media screen and (max-width: 1024px){
+        flex-direction: column;
+        gap: 3em;
+
         h6{
             font-size: 20px;
             line-height: 26px;
@@ -60,26 +60,16 @@ const ContactsTabWrapper = styled.section`
 
         p{
             font-size: 14px;
-            word-break: break-all;
         }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1024px){
-        img{
-            width: 20%;
-        }
-    }
-
-    @media screen and (max-width: 690px){
-        flex-direction: column;
-        gap: 3em;
-
-        p{
-            word-break: normal;
+    @media screen and (max-width: 550px){
+        .Location, .Phone, .Mail{
+            width: 100%;
         }
 
         img{
-            width: 15%;
+            width: 10%;
         }
     }
 
@@ -117,6 +107,8 @@ const ContactsTab = () => {
                 <div className='TextSide'>
                     <h6>Location</h6>
                     <p>382 Ikorodu Road, Maryland, Lagos</p>
+                    <p>5th Floor Interservice Tower Lumumba Avenue, Nakasero Kampala, Uganda.</p>
+                    <p>Abidjan, Cocody - Angré, immeuble Mah djalika</p>
                 </div>
             </div>
             <div className='Phone'>

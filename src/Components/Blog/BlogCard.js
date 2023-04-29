@@ -22,10 +22,10 @@ const BlogCardWrapper = styled.div`
 
 `
 
-const BlogCard = ({ thumbnail, body, date, header, display, gap, background, borderRadius, padding, height, text, border, bgColor, color, margin, displayButton, align, flexDirection, link}) => {
+const BlogCard = ({ thumbnail, body, date, header, display, gap, background, borderRadius, padding, height, text, border, bgColor, color, margin, displayButton, align, flexDirection, link, displayThumbnail}) => {
     return (
-        <BlogCardWrapper style={{ display: display, gap: gap, background: background, borderRadius: borderRadius, padding: padding, minHeight: height, alignItems: align, flexDirection: flexDirection }}>
-            <Link to={link}><img src={thumbnail} alt='blog thumbnail' className='FlexItem'></img></Link>
+        <BlogCardWrapper className='BlogCard' style={{ display: display, gap: gap, background: background, borderRadius: borderRadius, padding: padding, minHeight: height, alignItems: align, flexDirection: flexDirection }}>
+            <Link to={link}><img src={thumbnail} alt='blog thumbnail' className='FlexItem' style={{display: displayThumbnail}} ></img></Link>
             <div className='InfoTab FlexItem'>
                 <Link to={link}><h1>{header}</h1></Link>
                 <Link to={link}><p>{body}</p></Link><br></br>

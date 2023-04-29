@@ -16,6 +16,7 @@ import EngineeringProcurementAndConstruction from './Assets/EngineeringProcureme
 import DrillingSupport from './Assets/DrillingSupport.svg';
 import Integrating from './Assets/Integrating.svg';
 import PowerSolution from './Assets/PowerSolution.svg';
+import ManPower from './Assets/Manpower.svg';
 import SubscriptionBox from '../../Components/SubscriptionBox/SubscriptionBox';
 
 
@@ -26,7 +27,7 @@ const Services = () => {
       <Header background={(window.screen.availWidth > 425) ? HeaderPhoto : MobilePhoto}
         height={'39.9375em'}
         HeadOne={'Transforming ideas into solutions and plans into assets.'}
-        Body={"we're shaping a sustainable future."}
+        Body={"We're shaping a sustainable future."}
         TextOne={'Learn More'}
         TextTwo={'Schedule a call'}
         BgColorTwo={'#FF7113'}
@@ -161,6 +162,26 @@ const Services = () => {
               margin={'1em 0 0 0'}
               link={'/services/powersolution'}
               padding={'0 0 1.5em 0'} />
+          </div>
+          <div className='row4'>
+            <BlogCard thumbnail={ManPower}
+              header={'Man Power Supply'}
+              body={'We are equipped to provide both technical and non-technical experts for projects, offering a range of personnel categories to our clients.'}
+              background={'#F5F5F5'}
+              borderRadius={'18px'}
+              text={'Learn More '}
+              border={'none'}
+              bgColor={'#F5F5F5'}
+              color={'#ADADAD'}
+              margin={'1em 0 0 0'}
+              link={'/services/manpowerservice'}
+              padding={'0 0 1.5em 0'} />
+
+            <BlogCard displayThumbnail={'none'}
+              displayButton={'none'} />
+
+            <BlogCard displayThumbnail={'none'}
+              displayButton={'none'} />
           </div>
         </div>
         <SubscriptionBox />

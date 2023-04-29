@@ -18,6 +18,7 @@ import ArticleTwo from './Pages/Newsroom/ArticleTwo';
 import ArticleThree from './Pages/Newsroom/ArticleThree';
 import ScrollToTop from './ScrollToTop';
 import Contact from './Pages/Contact/Contact';
+import ManPower from './Pages/Services/ManPower';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
             <Route path='/services/processandinstrumentation' element={<ProcessAndInstrumentation />}></Route>
             <Route path='/services/engineeringprocurementandconstruction' element={<EngineeringProcurementAndConstruction />}></Route>
             <Route path='/services/drillingsupportandservice' element={<DrillingSupportAndService />}></Route>
+            <Route path='/services/manpowerservice' element={<ManPower />}></Route>
             <Route path='/services/integrating' element={<Integrating />}></Route>
             <Route path='/services/powersolution' element={<PowerSolution />}></Route>
             <Route path='/newsroom/articleone' element={<ArticleOne />}></Route>

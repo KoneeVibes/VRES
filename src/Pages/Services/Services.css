@@ -7,7 +7,8 @@
 #EngineeringProcurementAndConstruction #ServicesHighlight,
 #DrillingSupportAndService #ServicesHighlight,
 #Integrating #ServicesHighlight,
-#PowerSolution #ServicesHighlight {
+#PowerSolution #ServicesHighlight,
+#ManPower #ServicesHighlight {
     background: #F17120;
     border-radius: 33px;
     color: #FFFFFF;
@@ -42,7 +43,8 @@
 
 .row1,
 .row2,
-.row3 {
+.row3,
+.row4 {
     display: flex;
     gap: 4em;
     justify-content: space-between;
@@ -129,7 +131,12 @@
 .EM-ServiceBox #eight,
 .EM-ServiceBox #nine,
 .EM-ServiceBox #ten,
-.EM-ServiceBox #eleven {
+.EM-ServiceBox #eleven,
+.ManPowerServiceBox #seven,
+.ManPowerServiceBox #eight,
+.ManPowerServiceBox #nine,
+.ManPowerServiceBox #ten,
+.ManPowerServiceBox #eleven {
     display: none;
 }
 
@@ -137,7 +144,8 @@
 .EngineeringPCServiceBox .ListBoards,
 .DrillingSupportAndServiceServiceBox .ListBoards,
 .IntegratingServiceBox .ListBoards,
-.EM-ServiceBox .ListBoards {
+.EM-ServiceBox .ListBoards,
+.ManPowerServiceBox .ListBoards {
     padding-bottom: 3em;
 }
 
@@ -145,7 +153,8 @@
 .EngineeringPCServiceBox ul,
 .DrillingSupportAndServiceServiceBox ul,
 .IntegratingServiceBox ul,
-.EM-ServiceBox ul {
+.EM-ServiceBox ul,
+.ManPowerServiceBox ul {
     padding-inline-start: 0;
     list-style-position: inside;
 }
@@ -176,13 +185,19 @@
         font-size: 14px;
         letter-spacing: 0em;
     }
+
+    .row4 .BlogCard:nth-child(2),
+    .row4 .BlogCard:nth-child(3){
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1023px) {
 
     .row1,
     .row2,
-    .row3 {
+    .row3,
+    .row4 {
         flex-direction: column;
         align-items: stretch;
     }

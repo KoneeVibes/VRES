@@ -33,7 +33,7 @@ const About = () => {
           <h4 className='BodyCopy'>We craft all our experience around our values</h4>
           <div className='Cards'>
             <TextCard src={Energy} alt={'Energy Icon'} header={'Our Vision'} body={"To be the go-to choice for oil and gas companies in Nigeria and across Africa that is dedicated to delivering top-quality services and building long lasting relationships while ensuring we are always at the forefront of the industry."} />
-            <TextCard src={Tractor} alt={'Tractor Icon'} header={'Our Mission'} body={'We believe that our attention to detail and commitment to excellence sets us apart from competition. With a focus on safety, sustainability, and efficiency, we work hard to ensure our clients receive the best possible service in this rapidly changing world.'} />
+            <TextCard src={Tractor} alt={'Tractor Icon'} header={'Our Mission'} body={"Our mission is to provide exceptional service while upholding the highest ethical standards and complying with all relevant statutory regulations. We are committed to conducting all of our operations with integrity, ensuring that our clients receive the best possible experience. At the heart of our business is a passion for delivering outstanding service, and we take pride in our ability to meet and exceed our clients' expectations. With our unwavering commitment to excellence and ethical conduct, you can trust us to always act in your best interests."} />
           </div>
         </div>
         <div className='ProfileSection' id='Team'>

@@ -156,7 +156,9 @@ const Footer = () => {
                         body6={'Engineering Procurment & Construction'} link6={'/services/engineeringprocurementandconstruction'}
                         body7={'Drilling Support Service'} link7={'/services/drillingsupportandservice'}
                         body8={'Integrating'} link8={'/services/integrating'}
-                        body9={'Power Solution'} link9={'/services/powersolution'} />
+                        body9={'Power Solution'} link9={'/services/powersolution'}
+                        body10={'Man Power Supply'}
+                        link10={'/services/manpowerservice'} />
                     <FooterCard header={'LOCATION'}
                         body1={'382 Ikorodu Road, Maryland, Lagos '} link1={''} cursor1={'auto'}
                         body2={'5th Floor Interservice Tower Lumumba Avenue, Nakasero Kampala, Uganda'} link2={''} cursor2={'auto'}

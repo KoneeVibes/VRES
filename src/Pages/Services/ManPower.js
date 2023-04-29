@@ -12,7 +12,7 @@ const ManPower = () => {
             <Navbar />
             <Header background={(window.screen.availWidth > 425) ? HeaderPhoto : MobilePhoto}
                 height={'27.25em'}
-                HeadOne={'Man Power Service'}
+                HeadOne={'Man Power Supply'}
                 display={'none'}
                 Body={'We are equipped to provide both technical and non-technical experts for projects, offering a range of personnel categories to our clients.'} />
             <div className='ManPowerServiceBox'>

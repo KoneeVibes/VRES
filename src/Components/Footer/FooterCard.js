@@ -48,7 +48,7 @@ const FooterCardWrapper = styled.div`
     }
 `
 
-const FooterCard = ({ header, body1, body2, body3, body4, body5, body6, body7, body8, body9, link1, link2, link3, link4, link5, link6, link7, link8, link9, cursor1, cursor2, cursor3 }) => {
+const FooterCard = ({ header, body1, body2, body3, body4, body5, body6, body7, body8, body9, body10, link1, link2, link3, link4, link5, link6, link7, link8, link9, link10, cursor1, cursor2, cursor3 }) => {
     return (
         <FooterCardWrapper>
             <h6>{header}</h6>
@@ -73,6 +73,7 @@ const FooterCard = ({ header, body1, body2, body3, body4, body5, body6, body7, b
             <HashLink to={link7}><p>{body7}</p></HashLink>
             <HashLink to={link8}><p>{body8}</p></HashLink>
             <HashLink to={link9}><p>{body9}</p></HashLink>
+            <HashLink to={link10}><p>{body10}</p></HashLink>
         </FooterCardWrapper>
     )
 }

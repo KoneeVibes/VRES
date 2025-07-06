@@ -24,7 +24,7 @@ const BlogCardWrapper = styled.div`
 
 `
 
-const BlogCard = ({ thumbnail, body, date, header, display, gap, background, borderRadius, padding, height, text, border, bgColor, color, margin, displayButton, align, flexDirection, link, displayThumbnail, thumbnailHeight, imgHeight, flexSize }) => {
+const BlogCard = ({ thumbnail, body, date, header, display, gap, background, borderRadius, padding, height, text, border, bgColor, color, margin, displayButton, align, flexDirection, link, displayThumbnail, thumbnailHeight, imgHeight, flexSize, thumbnailBorderRadius }) => {
     return (
         <BlogCardWrapper
             className='BlogCard'
@@ -32,7 +32,7 @@ const BlogCard = ({ thumbnail, body, date, header, display, gap, background, bor
         >
             <Link
                 to={link}
-                style={{ height: thumbnailHeight, flex: flexSize, overflow: "hidden" }}
+                style={{ height: thumbnailHeight, flex: flexSize, overflow: "hidden", borderRadius: thumbnailBorderRadius }}
             >
                 <img src={thumbnail} alt='blog thumbnail' className='FlexItem' style={{ display: displayThumbnail, height: imgHeight }} />
             </Link>

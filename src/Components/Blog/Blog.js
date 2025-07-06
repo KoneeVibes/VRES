@@ -143,7 +143,8 @@ const Blog = () => {
                             body={blog?.title}
                             display={"flex"}
                             flexDirection={"column"}
-                            thumbnailHeight={"100%"}
+                            thumbnailHeight={"400px"}
+                            thumbnailBorderRadius={"10px"}
                             date={formatDate(blog?.updatedAt, false)}
                             padding={(window.screen.availWidth > 768) ? 'var(--sectioning-gap)' : '0'}
                             displayButton={'none'}

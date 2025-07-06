@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Footer from '../../Components/Footer/Footer';
 import Header from '../../Components/Header/Header';
 import Navbar from '../../Components/Navbar/Navbar';
@@ -7,11 +7,38 @@ import './Newsroom.css';
 import HeaderPhoto from './Assets/HeaderPhoto.svg';
 import MobileHeader from './Assets/MobileHeader.svg';
 import BlogCard from '../../Components/Blog/BlogCard';
-import ThumbnailOne from './Assets/ThumbnailOne.svg';
-import ThumbnailTwo from './Assets/ThumbnailTwo.svg';
-import ThumbnailThree from './Assets/ThumbnailThree.svg';
 
 const Newsroom = () => {
+  const API_KEY = process.env.REACT_APP_API_KEY;
+  const PROJECT_KEY = process.env.REACT_APP_PROJECT_KEY;
+  const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT;
+
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    const retrieveAllBlogService = async () => {
+      try {
+        const response = await fetch(`${API_ENDPOINT}/public/blog/${PROJECT_KEY}`, {
+          method: 'GET',
+          headers: {
+            'Authorization': `APIKey ${API_KEY}`,
+            'Content-Type': 'application/json'
+          },
+        });
+        const res = await response.json();
+        if (!response.ok) {
+          console.error('Error:', res);
+          throw new Error(res.message);
+        }
+        return setBlogs(res.data);
+      } catch (error) {
+        console.error('API fetch error:', error);
+        throw error;
+      }
+    };
+    retrieveAllBlogService();
+  }, [blogs, API_KEY, PROJECT_KEY, API_ENDPOINT]);
+
   return (
     <div id='Newsroom'>
       <Navbar />
@@ -22,44 +49,33 @@ const Newsroom = () => {
       <div className='main'>
         <div className='ArticlesSection'>
           <h2>All articles</h2>
-          <BlogCard thumbnail={ThumbnailOne}
-            header={'Investing In Africa Oil & Gas? Top 5 Forums You Should Attend'}
-            body={'Oil and Gas (petroleum) is almost as vital to human existence as water, because petroleum is used in every day-to-day activity, Petroleum remains in high demand.'}
-            text={'Learn More '}
-            border={'none'}
-            bgColor={'#FFFFFF'}
-            display={'flex'}
-            gap={(window.screen.availWidth > 768) ? '5em' : '1em'}
-            padding={`var(--sectioning-gap)`}
-            align={(window.screen.availWidth > 769) ? 'center' : 'stretch'}
-            flexDirection={(window.screen.availWidth < 769) ? 'column' : ''}
-            link={'/newsroom/articleone'} />
-
-          <BlogCard thumbnail={ThumbnailTwo}
-            header={'Tullow Oil and Capricorn Energy to give birth to a Tullicorn, a Caprillow… or maybe a Unicorn?'}
-            body={'As of mid-year 2022, Tullow Oil and Capricorn Energy were about forming a new Africa-focused energy company.'}
-            text={'Learn More '}
-            border={'none'}
-            bgColor={'#FFFFFF'}
-            display={'flex'}
-            gap={(window.screen.availWidth > 768) ? '5em' : '1em'}
-            padding={`var(--sectioning-gap)`}
-            align={(window.screen.availWidth > 769) ? 'center' : 'stretch'}
-            flexDirection={(window.screen.availWidth < 769) ? 'column' : ''}
-            link={'/newsroom/articletwo'} />
-
-          <BlogCard thumbnail={ThumbnailThree}
-            header={'Will Africa become the new green hydrogen “El Dorado”?'}
-            body={'Can Africa become a place where advanced science can be applied and contribute to improving the environment, i.e., an "El Dorado" in the new green economy?'}
-            text={'Learn More '}
-            border={'none'}
-            bgColor={'#FFFFFF'}
-            display={'flex'}
-            gap={(window.screen.availWidth > 768) ? '5em' : '1em'}
-            padding={`var(--sectioning-gap)`}
-            align={(window.screen.availWidth > 769) ? 'center' : 'stretch'}
-            flexDirection={(window.screen.availWidth < 769) ? 'column' : ''}
-            link={'/newsroom/articlethree'} />
+          {blogs?.map((blog, index) => {
+            // Extract first paragraph and limit to 20 words
+            let firstParagraph = blog?.body?.split('\n').find(p => p.trim().length > 0) || '';
+            let words = firstParagraph.split(/\s+/);
+            let shortBody = words.length > 20
+              ? words.slice(0, 20).join(' ') + '...'
+              : firstParagraph;
+            return (
+              <BlogCard
+                key={index}
+                thumbnail={blog?.thumbnail}
+                body={shortBody}
+                header={blog?.title}
+                text={'Learn More '}
+                border={'none'}
+                bgColor={'#FFFFFF'}
+                display={'flex'}
+                imgHeight={"300px"}
+                flexSize={"0.3"}
+                gap={(window.screen.availWidth > 768) ? '5em' : '1em'}
+                padding={`var(--sectioning-gap)`}
+                align={(window.screen.availWidth > 769) ? 'center' : 'stretch'}
+                flexDirection={(window.screen.availWidth < 769) ? 'column' : ''}
+                link={`/newsroom/${blog?.id}`}
+              />
+            )
+          })}
         </div>
         <SubscriptionBox />
       </div>

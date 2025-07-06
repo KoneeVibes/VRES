@@ -6,6 +6,8 @@ import LearnMore from '../Buttons/LearnMore';
 const BlogCardWrapper = styled.div`
     img{
         width: 100%;
+        height: 100%;
+        border-radius: 10px;
     }
 
     .InfoTab{
@@ -22,10 +24,18 @@ const BlogCardWrapper = styled.div`
 
 `
 
-const BlogCard = ({ thumbnail, body, date, header, display, gap, background, borderRadius, padding, height, text, border, bgColor, color, margin, displayButton, align, flexDirection, link, displayThumbnail}) => {
+const BlogCard = ({ thumbnail, body, date, header, display, gap, background, borderRadius, padding, height, text, border, bgColor, color, margin, displayButton, align, flexDirection, link, displayThumbnail, thumbnailHeight, imgHeight, flexSize }) => {
     return (
-        <BlogCardWrapper className='BlogCard' style={{ display: display, gap: gap, background: background, borderRadius: borderRadius, padding: padding, minHeight: height, alignItems: align, flexDirection: flexDirection }}>
-            <Link to={link}><img src={thumbnail} alt='blog thumbnail' className='FlexItem' style={{display: displayThumbnail}} ></img></Link>
+        <BlogCardWrapper
+            className='BlogCard'
+            style={{ display: display, gap: gap, background: background, borderRadius: borderRadius, padding: padding, minHeight: height, alignItems: align, flexDirection: flexDirection }}
+        >
+            <Link
+                to={link}
+                style={{ height: thumbnailHeight, flex: flexSize, overflow: "hidden" }}
+            >
+                <img src={thumbnail} alt='blog thumbnail' className='FlexItem' style={{ display: displayThumbnail, height: imgHeight }} />
+            </Link>
             <div className='InfoTab FlexItem'>
                 <Link to={link}><h1>{header}</h1></Link>
                 <Link to={link}><p>{body}</p></Link><br></br>

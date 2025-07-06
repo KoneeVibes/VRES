@@ -1,9 +1,7 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import BlogCard from './BlogCard';
-import Thumbnail1 from './Assets/Thumbnail1.svg'
-import Thumbnail2 from './Assets/Thumbnail2.svg'
-import Thumbnail3 from './Assets/Thumbnail3.svg'
+import { formatDate } from '../../helpers/dateFormatter.js';
 
 const BlogWrapper = styled.section`
     padding: var(--sectioning-gap);
@@ -97,6 +95,36 @@ const BlogWrapper = styled.section`
 `
 
 const Blog = () => {
+    const API_KEY = process.env.REACT_APP_API_KEY;
+    const PROJECT_KEY = process.env.REACT_APP_PROJECT_KEY;
+    const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT;
+
+    const [blogs, setBlogs] = useState([]);
+
+    useEffect(() => {
+        const retrieveAllBlogService = async () => {
+            try {
+                const response = await fetch(`${API_ENDPOINT}/public/blog/${PROJECT_KEY}`, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `APIKey ${API_KEY}`,
+                        'Content-Type': 'application/json'
+                    },
+                });
+                const res = await response.json();
+                if (!response.ok) {
+                    console.error('Error:', res);
+                    throw new Error(res.message);
+                }
+                return setBlogs(res.data);
+            } catch (error) {
+                console.error('API fetch error:', error);
+                throw error;
+            }
+        };
+        retrieveAllBlogService();
+    }, [blogs, API_KEY, PROJECT_KEY, API_ENDPOINT]);
+
     return (
         <BlogWrapper id='Blog'>
             <div className='TextSection'>
@@ -106,24 +134,22 @@ const Blog = () => {
                 </div>
             </div>
             <div className='ThumbnailSection'>
-                <BlogCard thumbnail={Thumbnail1}
-                    body={'Investing In Africa Oil & Gas? Top 5 Forums You Should Attend'}
-                    date={'January 6, 2023'}
-                    padding={(window.screen.availWidth > 768) ? 'var(--sectioning-gap)' : '0'}
-                    displayButton={'none'}
-                    link={'/newsroom/articleone'} />
-                <BlogCard thumbnail={Thumbnail2}
-                    body={'Tullow Oil and Capricorn Energy to give birth to a Tullicorn, a Caprillow… or maybe a Unicorn?'}
-                    date={'January 6, 2023'}
-                    padding={(window.screen.availWidth > 768) ? 'var(--sectioning-gap)' : '0'}
-                    displayButton={'none'}
-                    link={'/newsroom/articletwo'} />
-                <BlogCard thumbnail={Thumbnail3}
-                    body={'Will Africa become the new green hydrogen “El Dorado”?'}
-                    date={'January 6, 2023'}
-                    padding={(window.screen.availWidth > 768) ? 'var(--sectioning-gap)' : '0'}
-                    displayButton={'none'}
-                    link={'/newsroom/articlethree'} />
+                {blogs
+                    ?.slice(0, 3)
+                    .map((blog, index) => (
+                        <BlogCard
+                            key={index}
+                            thumbnail={blog?.thumbnail}
+                            body={blog?.title}
+                            display={"flex"}
+                            flexDirection={"column"}
+                            thumbnailHeight={"100%"}
+                            date={formatDate(blog?.updatedAt, false)}
+                            padding={(window.screen.availWidth > 768) ? 'var(--sectioning-gap)' : '0'}
+                            displayButton={'none'}
+                            link={`/newsroom/${blog?.id}`}
+                        />
+                    ))}
             </div>
         </BlogWrapper>
     )

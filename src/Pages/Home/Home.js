@@ -37,7 +37,7 @@ const Home = () => {
             description={'Hero Photo'}
             leadtext={'What we see'}
             body={"To be the go-to choice for oil and gas companies in Nigeria and across Africa that is dedicated to delivering top-quality services and building long lasting relationships while ensuring we are always at the forefront of the industry."}
-            justifyContent={'space-between'} padding={window.screen.availWidth >= 1024 ? '3.65625em 0 0 0' : ''}/>
+            justifyContent={'space-between'} padding={window.screen.availWidth >= 1024 ? '3.65625em 0 0 0' : ''} />
         </div>
         <Carousel
           carousel1={Carousel1}

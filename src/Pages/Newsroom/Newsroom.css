@@ -1,13 +1,13 @@
 #Newsroom #NewsroomHighlight,
 #ArticleOne #NewsroomHighlight,
 #ArticleTwo #NewsroomHighlight,
-#ArticleThree #NewsroomHighlight{
+#ArticleThree #NewsroomHighlight {
     background: #F17120;
     border-radius: 33px;
     color: #FFFFFF;
 }
 
-.ArticlesSection h2{
+.ArticlesSection h2 {
     font-family: 'Space Grotesk';
     font-size: 55px;
     font-weight: 700;
@@ -15,7 +15,7 @@
     letter-spacing: -0.02em;
 }
 
-.ArticlesSection h1{
+.ArticlesSection h1 {
     font-family: 'Space Grotesk';
     font-size: 40px;
     font-weight: 600;
@@ -25,7 +25,7 @@
     margin: 0;
 }
 
-.ArticlesSection p{
+.ArticlesSection p {
     font-family: Space Grotesk;
     font-size: 22px;
     font-weight: 400;
@@ -34,35 +34,36 @@
     color: #939393;
 }
 
-.ArticlesSection .FlexItem{
-    width: 100%;
+.ArticlesSection .FlexItem {
+    flex: 0.7;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1096px) {
-    .ArticlesSection h1{
+    .ArticlesSection h1 {
         font-size: 25px;
     }
 
-    .ArticlesSection p{
+    .ArticlesSection p {
         font-size: 14px;
         line-height: 21px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .ArticlesSection h2{
+    .ArticlesSection h2 {
         font-size: 30px;
         font-weight: 600;
         line-height: 40px;
     }
 }
 
-@media screen and (max-width: 279px){
+@media screen and (max-width: 279px) {
     .ArticlesSection h1 {
-            font-size: 14px;
-            line-height: 20px;
-        }
-    
+        font-size: 14px;
+        line-height: 20px;
+    }
+
     .ArticlesSection p {
         font-size: 7px;
         line-height: 15px;
@@ -76,10 +77,10 @@
     }
 
     .ArticlesSection h1 {
-            font-size: 5px;
-            line-height: 15px;
-        }
-    
+        font-size: 5px;
+        line-height: 15px;
+    }
+
     .ArticlesSection p {
         font-size: 2px;
         line-height: 10px;

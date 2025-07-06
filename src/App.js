@@ -13,9 +13,7 @@ import EngineeringProcurementAndConstruction from './Pages/Services/EngineeringP
 import DrillingSupportAndService from './Pages/Services/DrillingSupportAndService';
 import Integrating from './Pages/Services/Integrating';
 import PowerSolution from './Pages/Services/PowerSolution';
-import ArticleOne from './Pages/Newsroom/ArticleOne';
-import ArticleTwo from './Pages/Newsroom/ArticleTwo';
-import ArticleThree from './Pages/Newsroom/ArticleThree';
+import ArticleBox from './Pages/Newsroom/ArticleBox.js';
 import ScrollToTop from './ScrollToTop';
 import Contact from './Pages/Contact/Contact';
 import ManPower from './Pages/Services/ManPower';
@@ -31,7 +29,7 @@ function App() {
             <Route path='/about' element={<About />}></Route>
             <Route path='/services' element={<Services />}></Route>
             <Route path='/newsroom' element={<Newsroom />}></Route>
-            <Route path='/contact' element={<Contact/>}></Route>
+            <Route path='/contact' element={<Contact />}></Route>
             <Route path='/services/procurement' element={<Procurement />}></Route>
             <Route path='/services/assetmanagement' element={<AssetManagement />}></Route>
             <Route path='/services/fabricationandcivilworkandconstruction' element={<Fabrication />}></Route>
@@ -42,9 +40,7 @@ function App() {
             <Route path='/services/manpowerservice' element={<ManPower />}></Route>
             <Route path='/services/integrating' element={<Integrating />}></Route>
             <Route path='/services/powersolution' element={<PowerSolution />}></Route>
-            <Route path='/newsroom/articleone' element={<ArticleOne />}></Route>
-            <Route path='/newsroom/articletwo' element={<ArticleTwo />}></Route>
-            <Route path='/newsroom/articlethree' element={<ArticleThree />}></Route>
+            <Route path='/newsroom/:blogId' element={<ArticleBox />}></Route>
           </Routes>
         </ScrollToTop>
       </BrowserRouter>

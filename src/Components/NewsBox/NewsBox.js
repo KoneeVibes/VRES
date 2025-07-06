@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const NewsBoxWrapper = styled.article`
@@ -113,7 +112,8 @@ const NewsBoxWrapper = styled.article`
     }
 `
 
-const NewsBox = ({ Header, DateTag, BodyI, BodyII, BodyIII, BodyIV, BodyV, BodyVI, BodyVII, BodyVIII, BodyIX, BodyX, BodyXI, BodyXII, BodyXIII, BodyXIV, BodyXV, TopicI, TopicII, TopicIII, TopicIV, TopicV, TopicVI, TopicVII, TopicVIII, TopicIX, TopicX, TopicXI, TopicXII, TopicXIII, TopicXIV, TopicXV, Point5I, Point5II, Point5III, Point1I, Point1II, Point1III, Link, LinkText, Display }) => {
+const NewsBox = ({ Header, DateTag, body }) => {
+    const paragraphs = body?.split('\n').filter(line => line.trim() !== '');
     return (
         <NewsBoxWrapper>
             <div className='Header'>
@@ -121,76 +121,10 @@ const NewsBox = ({ Header, DateTag, BodyI, BodyII, BodyIII, BodyIV, BodyV, BodyV
                 <p>{DateTag}</p>
             </div>
             <div>
-                <strong>{TopicI}</strong>
-                <ul style={{display: Display}}>
-                    <li>{Point1I}</li>
-                    <li>{Point1II}</li>
-                    <li>{Point1III}</li>
-                </ul>
-                <p>{BodyI}</p>
+                {paragraphs?.map((text, index) => (
+                    <p key={index}>{text}</p>
+                ))}
             </div>
-            <div>
-                <strong>{TopicII}</strong>
-                <p>{BodyII}</p>
-            </div>
-            <div>
-                <strong>{TopicIII}</strong>
-                <p>{BodyIII}</p>
-            </div>
-            <div>
-                <strong>{TopicIV}</strong>
-                <p>{BodyIV}</p>
-            </div>
-            <div>
-                <strong>{TopicV}</strong>
-                <p>{BodyV}</p>
-                <div>
-                    <p>{Point5I}</p>
-                    <p>{Point5II}</p>
-                    <p>{Point5III}</p>
-                </div>
-            </div>
-            <div>
-                <strong>{TopicVI}</strong>
-                <p>{BodyVI}</p>
-            </div>
-            <div>
-                <strong>{TopicVII}</strong>
-                <p>{BodyVII}</p>
-            </div>
-            <div>
-                <strong>{TopicVIII}</strong>
-                <p>{BodyVIII}</p>
-            </div>
-            <div>
-                <strong>{TopicIX}</strong>
-                <p>{BodyIX}</p>
-            </div>
-            <div>
-                <strong>{TopicX}</strong>
-                <p>{BodyX}</p>
-            </div>
-            <div>
-                <strong>{TopicXI}</strong>
-                <p>{BodyXI}</p>
-            </div>
-            <div>
-                <strong>{TopicXII}</strong>
-                <p>{BodyXII}</p>
-            </div>
-            <div>
-                <strong>{TopicXIII}</strong>
-                <p>{BodyXIII}</p>
-            </div>
-            <div>
-                <strong>{TopicXIV}</strong>
-                <p>{BodyXIV}</p>
-            </div>
-            <div>
-                <strong>{TopicXV}</strong>
-                <p>{BodyXV}</p>
-            </div>
-            <p>Source: <span><a href={Link} target='_blank' rel="noopener noreferrer external">{LinkText}</a></span></p>
         </NewsBoxWrapper>
     )
 }
